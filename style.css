@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
 }
+
 body{
     min-height: 100vh;
     display: flex;
@@ -129,3 +130,43 @@ span{
   .firework::after {
     transform: translate(-50%, -50%) rotate(-37deg) !important;
   }
+
+{
+    text-decoration: none;
+    color: #9ca0b1;
+}
+
+.wrapper {
+    text-align: center;}
+h1 {
+    color: #fff;
+    /*font-size: 92px;*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background-image: linear-gradient(to right top, #f20044, #ee0063, #dd0086, #bb00ab, #7d00ce);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.group{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
